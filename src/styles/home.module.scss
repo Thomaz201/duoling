@@ -1,0 +1,26 @@
+.container {
+  max-width: 84rem;
+  margin: 5rem auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.gradient {
+  background-image: var(--duoling-gradient);
+  background-clip: text;
+  color: transparent;
+}
+
+.gamesContainer {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 4rem;
+}

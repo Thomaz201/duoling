@@ -1,0 +1,36 @@
+.container {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  cursor: pointer;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.gameInfoContainer {
+  width: 100%;
+  padding: 4rem 1rem 1rem;
+  background-image: var(--game-gradient);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  overflow: hidden;
+}
+
+.title {
+  font-weight: 700;
+  display: block;
+}
+
+.ads {
+  color: var(--zinc-300);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-top: 0.25rem;
+  display: block;
+}

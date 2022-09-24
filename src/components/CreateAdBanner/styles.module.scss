@@ -1,0 +1,47 @@
+.containerBorder {
+  padding-top: 0.5rem;
+  background-image: var(--duoling-gradient);
+  align-self: stretch;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.container {
+  background-color: var(--slate-900);
+  padding: 1.5rem 2rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--white);
+  font-weight: 900;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.description {
+  color: var(--zinc-400);
+}
+
+.button {
+  padding: 0.75rem 1rem;
+  background-color: var(--violet-500);
+  color: var(--white);
+  border-radius: 0.25rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: var(--violet-600);
+  }
+}

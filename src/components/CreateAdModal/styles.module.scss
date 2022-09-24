@@ -1,0 +1,228 @@
+.overlay {
+  background-color: var(--black-overlay);
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  position: fixed;
+}
+
+.modalContent {
+  position: fixed;
+  background-color: var(--slate-900);
+  padding: 2rem 2.5rem;
+  color: var(--white);
+  border-radius: 0.5rem;
+  width: 30rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.25);
+  
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 900;
+}
+
+.form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.selectGameContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.selectTrigger {
+  background-color: var(--zinc-900);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem;
+}
+
+.selectContent {
+  background-color: var(--zinc-900);
+  border-radius: 0.25rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+  padding: 0.5rem;
+  color: var(--white);
+}
+
+.selectLabel {
+  padding: 1rem 3rem 0.5rem;
+  color: var(--zinc-500);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.selectItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  color: var(--violet-500);
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem;
+
+  cursor: default;
+
+  transition: color 0.2s, background-color 0.2s, font-weight 0.2s;
+
+  &:hover {
+    background-color: var(--violet-500);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+.selectItemIndicator {
+  position: absolute;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.singleInputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.doubleInputContainer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.weekDaysContainer {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.whiteText {
+  color: var(--white);
+}
+
+.zinc500Text {
+  color: var(--zinc-500);
+}
+
+.zinc400Text {
+  color: var(--zinc-400);
+}
+
+.violetBackground {
+  background-color: var(--violet-500);
+}
+
+.zinc900background {
+  background-color: var(--zinc-900);
+}
+
+.toggleGroupContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 0.25rem;
+}
+
+.toggleGroupItem {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.25rem;
+}
+
+.hoursOnDayContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.hoursOnDayInputsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.checkboxLabel {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.checkboxContainer {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  background-color: var(--zinc-900);
+}
+
+.checkMark {
+  color: var(--emerald-400);
+}
+
+.footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.cancelButton {
+  background-color: var(--zinc-500);
+  padding-inline: 1.25rem;
+  height: 3rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: var(--zinc-600);
+  }
+}
+
+.submitButton {
+  background-color: var(--violet-500);
+  padding-inline: 1.25rem;
+  height: 3rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: var(--violet-600);
+  }
+}
